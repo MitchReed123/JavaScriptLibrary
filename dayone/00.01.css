@@ -1,0 +1,34 @@
+h1{
+    color: lightgreen;
+    text-align: center;
+}
+
+h3{
+    color: blue;
+}
+
+p{
+    color: red;
+}
+
+#truth{
+    border: 10px black solid;
+    border-radius: 20px;
+}
+
+body{
+    background-color: gray;
+}
+
+#truths{
+    border: 5px black solid;
+    border-radius: 10px;
+    background-color: lightgray;
+    text-align: center;
+
+}
+
+#align{
+    display: flex;
+    justify-content: space-evenly;
+}
