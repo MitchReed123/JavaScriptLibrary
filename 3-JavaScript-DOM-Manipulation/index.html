@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- All of our HTML code will go here -->
+    <!-- <p id="textParagraph">Sample Text</p>
+    <p class="sampleClass">This paragraph has a class of 'sampleClass'</p> -->
+
+    <!-- <button id="clickThisButton">I want to be clicked</button> -->
+
+    <label for="nameInput">Enter Your Name:</label>
+    <input type="text" id="nameInput" placeholder="John Smith" />
+
+    <p>Welcome</p>
+    <p>No name has been entered</p>
+
+    <script type="text/javascript">
+      // All of our javascript will go here
+      //   document.getElementById("textParagraph").style.color = "blue";
+      //   console.log(document.querySelectorAll("p.sampleClass"));
+
+      //   document.querySelectorAll("p.sampleClass")[0].innerText =
+      //     "My text was changed!";
+
+      //   document
+      //     .getElementById("clickThisButton")
+      //     .addEventListener("click", () => {
+      //       console.log("I was clicked");
+      //     });
+
+      //   document
+      //     .getElementById("clickThisButton")
+      //     .addEventListener("click", (details) => {
+      //       details.target.style.backgroundColor = "Red";
+      //     });
+
+      document
+        .getElementById("nameInput")
+        .addEventListener("keyup", (event) => {
+          if (event.target.value === "") {
+            document.getElementsByTagName(
+              "p"
+            )[1].innerText = `No name has been entered`;
+          } else {
+            document.getElementsByTagName(
+              "p"
+            )[1].innerText = `everyone pelase welcome ${event.target.value} to the stage.`;
+          }
+        });
+    </script>
+  </body>
+  <!-- // for loops, parameters, objects -->
+</html>
