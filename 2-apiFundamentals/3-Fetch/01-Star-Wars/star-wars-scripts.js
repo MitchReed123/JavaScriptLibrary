@@ -1,9 +1,15 @@
 var starWarsPeopleList = document.querySelector("ul");
 
-fetch("https://swapi.dev/")
+fetch("https://cors-anywhere.herokuapp.com/https://swapi.dev/api/people")
   .then(function (response) {
     return response.json();
   })
   .then(function (json) {
-    console.log(json);
+    let people = json.results;
+
+    for (p of people) {
+      let listItem = document.createElement("li");
+      listItem.innerHTML = "<p>" + p.name + "<p>";
+      starWarsPeopleList.appendChild(listItem);
+    }
   });
