@@ -1,0 +1,10 @@
+#piePic {
+  height: 70px;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  background-color: tan;
+  justify-content: space-between;
+}
